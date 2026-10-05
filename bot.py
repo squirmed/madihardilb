@@ -15,7 +15,8 @@ def load_scores():
     return {"hardi": 0, "madi": 0}
 
 def save_scores(scores):
-    """Save scores to file."""
+    """Save scores to file, creating the directory if needed."""
+    os.makedirs(os.path.dirname(SAVE_FILE), exist_ok=True)
     with open(SAVE_FILE, "w") as f:
         json.dump(scores, f, indent=2)
 
