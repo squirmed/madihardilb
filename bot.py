@@ -4,7 +4,7 @@ import json
 import os
 
 # --- Configuration ---
-SAVE_FILE = "/data/scores.json"
+SAVE_FILE = "/app/data/scores.json"
 
 # --- Score Loading & Saving ---
 def load_scores():
